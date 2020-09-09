@@ -1,0 +1,112 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-white">
+  <div class="collapse navbar-collapse">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" routerLink="../menu">Menu</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="../narudzba">Narudžba <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item ">
+        <button class="btn btn-link" (click)="goToIspis()" [disabled]="buttonVisibleIspis()">Ispis narudžbi</button>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <button class="btn btn-danger my-2 my-sm-0" (click)="onLogout()">Odjavi se</button>
+    </form>
+  </div>
+</nav>
+
+<form #form="ngForm" autocomplete="off" *ngIf="service.formData" (submit)="napraviNarudzbu(form)">
+  <input type="hidden" name="NarudzbaID" #NarudzbaID="ngModel" [(ngModel)]="service.formData.NarudzbaID">
+
+  <h3>Narudžba</h3>
+
+  <div class="form-row justify-content-center">
+
+    <div class="form-group col-md-2">
+      <input type="hidden" name="NarudzbaID">
+      <div class="form-group align-self-center">
+        <label>Broj narudžbe</label>
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text">#</div>
+          </div>
+          <input name="brojNarudzbe" #brojNarudzbe="ngModel" [(ngModel)]="service.formData.brojNarudzbe"
+            class="form-control" readonly>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="form-row justify-content-center">
+    <div class="form-group col-md-4">
+      <label>Odabir načina plaćanja</label>
+      <select name="nacinPlacanja" #nacinPlacanja="ngModel" [(ngModel)]="service.formData.nacinPlacanja"
+        class="form-control">
+        <option value="">-Select-</option>
+        <option value="Gotovina">Gotovina</option>
+        <option value="Kartica">Kartica</option>
+      </select>
+    </div>
+
+    <div class="form-group col-md-4">
+      <label>Odabir isporuke</label>
+      <select name="nacinIsporuke" #nacinIsporuke="ngModel" [(ngModel)]="service.formData.nacinIsporuke"
+        class="form-control">
+        <option value="">-Select-</option>
+        <option value="Dostava na adresu">Dostava na adresu</option>
+        <option value="Preuzimanje">Preuzimanje</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <a class="btn btn-dark text-white" (click)="dodajArtikal(null, service.formData.NarudzbaID)">
+      <i class="fa fa-plus"> Dodaj artikal</i>
+    </a>
+  </div>
+
+  <table class="table">
+    <thead class="thead-dark">
+      <th>Odabrani artikal</th>
+      <th>Količina</th>
+      <th>Cijena</th>
+      <th></th>
+    </thead>
+    <tbody>
+      <tr *ngIf="service.artikli.length == 0" [class.text-danger]="!isValid && service.artikli.length==0">
+        <td class="font-italic text-center" colspan="3">Nije zabilježena niti jedna narudžba.</td>
+      </tr>
+      <tr *ngFor="let artikal of service.artikli;let i=index;">
+        <td>{{artikal.imeArtikla}}</td>
+        <td>{{artikal.Kolicina}}</td>
+        <td>{{artikal.ukupanIznos}} kn</td>
+        <td>
+          <a class="btn btn-sm btn-danger text-white ml-1" (click)="obrisiArtikal(artikal.StavkeNarudzbeID, i)">
+            <i class="fa fa-trash"></i> Obriši</a>
+
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="form-row justify-content-center">
+    <div class="form-group col-md-3">
+      <label>Ukupan iznos narudžbe</label>
+      <div class="input-group">
+        <input name="ukupanIznos" #ukupanIznos="ngModel" [(ngModel)]="service.formData.ukupanIznos" class="form-control"
+          readonly>
+        <div class="input-group-prepend">
+          <div class="input-group-text">kn</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <button type="submit" class="btn btn-outline-dark">
+      <i class="fa fa-check-square-o"></i> Napravi narudžbu</button>
+  </div>
+
+</form>
