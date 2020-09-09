@@ -1,0 +1,36 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-white">
+  <div class="collapse navbar-collapse">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" routerLink="../menu">Menu</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="../narudzba">Narudžba</a>
+      </li>
+      <li class="nav-item active">
+        <button class="btn btn-link" (click)="goToIspis()" [disabled]="buttonVisibleIspis()">Ispis narudžbi <span class="sr-only">(current)</span></button>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <button class="btn btn-danger my-2 my-sm-0" (click)="onLogout()">Odjavi se</button>
+    </form>
+  </div>
+</nav>
+<h3>Lista narudžbi</h3>
+<table class="table table-hover">
+  <thead>
+    <th>#Broj narudžbe</th>
+    <th>Način plaćanja</th>
+    <th>Način isporuke</th>
+    <th>Ukupan iznos narudžbe</th>
+    <th></th>
+  </thead>
+  <tbody>
+    <tr *ngFor = "let narudzba of listaNarudzbi">
+      <th>{{narudzba.brojNarudzbe}}</th>
+      <th>{{narudzba.nacinPlacanja}}</th>
+      <th>{{narudzba.nacinIsporuke}}</th>
+      <th>{{narudzba.ukupanIznos}} kn</th>
+    </tr>
+  </tbody>
+</table>
