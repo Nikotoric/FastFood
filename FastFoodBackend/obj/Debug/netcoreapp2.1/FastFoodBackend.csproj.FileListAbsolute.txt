@@ -1,0 +1,42 @@
+C:\Users\Luka\Desktop\Zavrsni rad - Niko\Backend\FastFoodBackend\bin\Debug\netcoreapp2.1\FastFoodBackend.deps.json
+C:\Users\Luka\Desktop\Zavrsni rad - Niko\Backend\FastFoodBackend\bin\Debug\netcoreapp2.1\FastFoodBackend.runtimeconfig.json
+C:\Users\Luka\Desktop\Zavrsni rad - Niko\Backend\FastFoodBackend\bin\Debug\netcoreapp2.1\FastFoodBackend.runtimeconfig.dev.json
+C:\Users\Luka\Desktop\Zavrsni rad - Niko\Backend\FastFoodBackend\bin\Debug\netcoreapp2.1\FastFoodBackend.dll
+C:\Users\Luka\Desktop\Zavrsni rad - Niko\Backend\FastFoodBackend\obj\Debug\netcoreapp2.1\FastFoodBackend.csproj.CoreCompileInputs.cache
+C:\Users\Luka\Desktop\Zavrsni rad - Niko\Backend\FastFoodBackend\obj\Debug\netcoreapp2.1\FastFoodBackend.RazorAssemblyInfo.cache
+C:\Users\Luka\Desktop\Zavrsni rad - Niko\Backend\FastFoodBackend\obj\Debug\netcoreapp2.1\FastFoodBackend.RazorAssemblyInfo.cs
+C:\Users\Luka\Desktop\Zavrsni rad - Niko\Backend\FastFoodBackend\obj\Debug\netcoreapp2.1\FastFoodBackend.AssemblyInfoInputs.cache
+C:\Users\Luka\Desktop\Zavrsni rad - Niko\Backend\FastFoodBackend\obj\Debug\netcoreapp2.1\FastFoodBackend.AssemblyInfo.cs
+C:\Users\Luka\Desktop\Zavrsni rad - Niko\Backend\FastFoodBackend\obj\Debug\netcoreapp2.1\FastFoodBackend.RazorTargetAssemblyInfo.cache
+C:\Users\Luka\Desktop\Zavrsni rad - Niko\Backend\FastFoodBackend\bin\Debug\netcoreapp2.1\FastFoodBackend.pdb
+C:\Users\Luka\Desktop\Zavrsni rad - Niko\Backend\FastFoodBackend\obj\Debug\netcoreapp2.1\FastFoodBackend.dll
+C:\Users\Luka\Desktop\Zavrsni rad - Niko\Backend\FastFoodBackend\obj\Debug\netcoreapp2.1\FastFoodBackend.pdb
+C:\Users\Luka\Desktop\Zavrsni rad - Niko\Backend\FastFoodBackend\obj\Debug\netcoreapp2.1\FastFoodBackend.csprojAssemblyReference.cache
+C:\Users\cvita\OneDrive\Radna površina\niko\FastFoodBackend\bin\Debug\netcoreapp2.1\FastFoodBackend.deps.json
+C:\Users\cvita\OneDrive\Radna površina\niko\FastFoodBackend\bin\Debug\netcoreapp2.1\FastFoodBackend.runtimeconfig.json
+C:\Users\cvita\OneDrive\Radna površina\niko\FastFoodBackend\bin\Debug\netcoreapp2.1\FastFoodBackend.runtimeconfig.dev.json
+C:\Users\cvita\OneDrive\Radna površina\niko\FastFoodBackend\bin\Debug\netcoreapp2.1\FastFoodBackend.dll
+C:\Users\cvita\OneDrive\Radna površina\niko\FastFoodBackend\bin\Debug\netcoreapp2.1\FastFoodBackend.pdb
+C:\Users\cvita\OneDrive\Radna površina\niko\FastFoodBackend\obj\Debug\netcoreapp2.1\FastFoodBackend.csprojAssemblyReference.cache
+C:\Users\cvita\OneDrive\Radna površina\niko\FastFoodBackend\obj\Debug\netcoreapp2.1\FastFoodBackend.csproj.CoreCompileInputs.cache
+C:\Users\cvita\OneDrive\Radna površina\niko\FastFoodBackend\obj\Debug\netcoreapp2.1\FastFoodBackend.RazorAssemblyInfo.cache
+C:\Users\cvita\OneDrive\Radna površina\niko\FastFoodBackend\obj\Debug\netcoreapp2.1\FastFoodBackend.RazorAssemblyInfo.cs
+C:\Users\cvita\OneDrive\Radna površina\niko\FastFoodBackend\obj\Debug\netcoreapp2.1\FastFoodBackend.AssemblyInfoInputs.cache
+C:\Users\cvita\OneDrive\Radna površina\niko\FastFoodBackend\obj\Debug\netcoreapp2.1\FastFoodBackend.AssemblyInfo.cs
+C:\Users\cvita\OneDrive\Radna površina\niko\FastFoodBackend\obj\Debug\netcoreapp2.1\FastFoodBackend.RazorTargetAssemblyInfo.cache
+C:\Users\cvita\OneDrive\Radna površina\niko\FastFoodBackend\obj\Debug\netcoreapp2.1\FastFoodBackend.dll
+C:\Users\cvita\OneDrive\Radna površina\niko\FastFoodBackend\obj\Debug\netcoreapp2.1\FastFoodBackend.pdb
+C:\Users\Niko\Desktop\Fast Food - zavrsni\FastFoodBackend\bin\Debug\netcoreapp2.1\FastFoodBackend.deps.json
+C:\Users\Niko\Desktop\Fast Food - zavrsni\FastFoodBackend\bin\Debug\netcoreapp2.1\FastFoodBackend.runtimeconfig.json
+C:\Users\Niko\Desktop\Fast Food - zavrsni\FastFoodBackend\bin\Debug\netcoreapp2.1\FastFoodBackend.runtimeconfig.dev.json
+C:\Users\Niko\Desktop\Fast Food - zavrsni\FastFoodBackend\bin\Debug\netcoreapp2.1\FastFoodBackend.dll
+C:\Users\Niko\Desktop\Fast Food - zavrsni\FastFoodBackend\bin\Debug\netcoreapp2.1\FastFoodBackend.pdb
+C:\Users\Niko\Desktop\Fast Food - zavrsni\FastFoodBackend\obj\Debug\netcoreapp2.1\FastFoodBackend.csproj.CoreCompileInputs.cache
+C:\Users\Niko\Desktop\Fast Food - zavrsni\FastFoodBackend\obj\Debug\netcoreapp2.1\FastFoodBackend.RazorAssemblyInfo.cache
+C:\Users\Niko\Desktop\Fast Food - zavrsni\FastFoodBackend\obj\Debug\netcoreapp2.1\FastFoodBackend.RazorAssemblyInfo.cs
+C:\Users\Niko\Desktop\Fast Food - zavrsni\FastFoodBackend\obj\Debug\netcoreapp2.1\FastFoodBackend.AssemblyInfoInputs.cache
+C:\Users\Niko\Desktop\Fast Food - zavrsni\FastFoodBackend\obj\Debug\netcoreapp2.1\FastFoodBackend.AssemblyInfo.cs
+C:\Users\Niko\Desktop\Fast Food - zavrsni\FastFoodBackend\obj\Debug\netcoreapp2.1\FastFoodBackend.RazorTargetAssemblyInfo.cache
+C:\Users\Niko\Desktop\Fast Food - zavrsni\FastFoodBackend\obj\Debug\netcoreapp2.1\FastFoodBackend.dll
+C:\Users\Niko\Desktop\Fast Food - zavrsni\FastFoodBackend\obj\Debug\netcoreapp2.1\FastFoodBackend.pdb
+C:\Users\Niko\Desktop\Fast Food - zavrsni\FastFoodBackend\obj\Debug\netcoreapp2.1\FastFoodBackend.csprojAssemblyReference.cache
