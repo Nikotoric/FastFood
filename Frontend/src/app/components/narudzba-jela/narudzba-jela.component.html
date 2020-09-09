@@ -1,0 +1,55 @@
+<h3> Odabir artikla</h3>
+<form #form="ngForm" autocomplete="off" (submit)="dodaj(form)">
+
+  <input type="hidden" name="StavkeNarudzbeID" #StavkeNarudzbeID="ngModel" [(ngModel)]="formData.StavkeNarudzbeID">
+  <input type="hidden" name="NarudzbaID" #NarudzbaID="ngModel" [(ngModel)]="formData.NarudzbaID">
+  <input type="hidden" name="imeArtikla" #imeArtikla="ngModel" [(ngModel)]="formData.imeArtikla">
+
+  <div class="form-row justify-content-center">
+    <div class="form-group col-sm-7">
+      <label>Artikal: </label>
+      <select name="ArtikalID" #ArtikalID="ngModel" [(ngModel)]="formData.ArtikalID" (change)="cijenaArtikla($event.target)" class="form-control"
+        [class.is-invalid]="!isValid && formData.ArtikalID==0">
+        <option value="0">-Select-</option>
+        <option *ngFor="let artikal of listaArtikla" value="{{artikal.artikalID}}">{{artikal.imeArtikla}}</option>
+      </select>
+    </div>
+
+    <div class="form-group col-sm-3">
+      <label>Cijena</label>
+      <div class="input-group">
+        <input name="cijena" #cijena="ngModel" [(ngModel)]="formData.cijena" class="form-control" readonly>
+        <div class="input-group-prepend">
+          <div class="input-group-text">kn</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group col-sm-3">
+      <label>Količina</label>
+      <input name="Kolicina" #Kolicina="ngModel" [(ngModel)]="formData.Kolicina" (keyup)="ukupanIzracun()" class="form-control"
+        [class.is-invalid]="!isValid && formData.Kolicina==0">
+    </div>
+
+    <div class="form-group col-sm-10">
+      <label>Ukupan iznos</label>
+      <div class="input-group w-100">
+        <input name="ukupanIznos" #ukupanIznos="ngModel" [(ngModel)]="formData.ukupanIznos" class="form-control" readonly>
+        <div class="input-group-prepend">
+          <div class="input-group-text">kn</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="form-group">
+    <button type="submit" class="btn btn-dark">
+      <i class="fa fa-check-square-o"></i> Dodaj artikal</button>
+  </div>
+  <div class="form-group">
+    <button type="button" class="btn btn-outline-dark ml-2" [mat-dialog-close]>
+      <i class="fa fa-close"></i> Odustani</button>
+  </div>
+
+</form>
