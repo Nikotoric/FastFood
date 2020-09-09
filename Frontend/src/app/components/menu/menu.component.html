@@ -1,0 +1,41 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-white">
+  <div class="collapse navbar-collapse">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="../menu">Menu <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="../narudzba">Narudžba</a>
+      </li>
+      <li class="nav-item ">
+        <button class="btn btn-link" (click)="goToIspis()" [disabled]="buttonVisibleIspis()">Ispis narudžbi</button>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <button class="btn btn-danger my-2 my-sm-0" (click)="onLogout()">Odjavi se</button>
+    </form>
+  </div>
+</nav>
+
+<h3>Menu</h3>
+<div class="form-row">
+
+  <div class="col-md-4">
+    <ag-grid-angular domLayout="autoHeight" class="ag-theme-material" [rowData]="pizze" [columnDefs]="columnPizza"
+      (gridReady)='onGridReady($event)' (gridSizeChanged)='onGridSizeChanged($event)'>
+    </ag-grid-angular>
+  </div>
+
+  <div class="col-md-4">
+    <ag-grid-angular domLayout="autoHeight" class="ag-theme-material" [rowData]="sendvici" [columnDefs]="columnSendvici"
+      (gridReady)='onGridReady($event)' (gridSizeChanged)='onGridSizeChanged($event)'>
+    </ag-grid-angular>
+  </div>
+
+  <div class="col-md-4">
+    <ag-grid-angular domLayout="autoHeight" class="ag-theme-material" [rowData]="pica" [columnDefs]="columnPica"
+      (gridReady)='onGridReady($event)' (gridSizeChanged)='onGridSizeChanged($event)'>
+    </ag-grid-angular>
+  </div>
+
+</div>
