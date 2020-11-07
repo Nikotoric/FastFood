@@ -25,4 +25,4 @@ Nakon dodavanja svih ţeljenih artikala u košaricu korisnik vidi tablični prik
 Svaka provedena narudžba sprema se u bazu podataka, a jedino administratori imaju uvid u ispis svih narudžbi. Kako bi vidjeli ispis svih narudžbi u aplikacijskom dijelu administratori  trebaju pritisnuti na Ispis narudžbi u navigacijskom izborniku. Administrator ima uvid u jedinstveni broj narudžbe, odabrane načine isporuke i plaćanja te ukupan iznos same narudžbe.
 <p align="center">
   <kbd><img src="./FastFood/slike/izgledIspisaNarudzbi.png" alt="ispis narudzbi" width="738", border="5"> </kbd>
-</p>   
+</p>
